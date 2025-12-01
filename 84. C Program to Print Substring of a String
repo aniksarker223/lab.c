@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char s[100];
+    int start, len, i;
+
+    printf("Enter String: ");
+    gets(s);
+
+    printf("Enter start index: ");
+    scanf("%d", &start);
+    printf("Enter length: ");
+    scanf("%d", &len);
+
+    printf("Substring: ");
+    for(i=start; i<start+len && s[i]!='\0'; i++)
+        printf("%c", s[i]);
+
+    printf("\n");
+
+    return 0;
+}

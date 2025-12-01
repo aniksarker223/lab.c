@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char s[200];
+    int i, d=0, l=0, sp=0;
+
+    printf("Enter a string: ");
+    gets(s);
+
+    for(i=0; s[i] != '\0'; i++){
+        if(s[i]>='0' && s[i]<='9')
+            d++;
+        else if((s[i]>='a'&&s[i]<='z') || (s[i]>='A'&&s[i]<='Z'))
+            l++;
+        else
+            sp++;
+    }
+
+    printf("Digits = %d\nLetters = %d\nSpecial Characters = %d\n", d, l, sp);
+
+    return 0;
+}

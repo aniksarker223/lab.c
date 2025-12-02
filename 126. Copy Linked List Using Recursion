@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+struct node{ int data; struct node *next; };
+
+struct node* copy(struct node *h){
+    if(!h) return NULL;
+    struct node* n = malloc(sizeof(struct node));
+    n->data = h->data;
+    n->next = copy(h->next);
+    return n;
+}
+int main(){
+    struct node a={1,NULL}, b={2,NULL}, c={3,NULL};
+    a.next=&b; b.next=&c;
+    struct node *h2 = copy(&a);
+    while(h2){ printf("%d ",h2->data); h2=h2->next; }
+    return 0;
+}

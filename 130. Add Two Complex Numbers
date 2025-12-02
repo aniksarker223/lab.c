@@ -1,0 +1,9 @@
+#include <stdio.h>
+struct cplx{ int r,i; };
+int main(){
+    struct cplx a,b,c;
+    scanf("%d%d%d%d",&a.r,&a.i,&b.r,&b.i);
+    c.r=a.r+b.r; c.i=a.i+b.i;
+    printf("%d + %di", c.r, c.i);
+    return 0;
+}

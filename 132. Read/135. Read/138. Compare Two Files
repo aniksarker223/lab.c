@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+    FILE *f1=fopen("a.txt","r"), *f2=fopen("b.txt","r");
+    char c1, c2; int pos=1, ok=1;
+    while((c1=fgetc(f1))!=EOF && (c2=fgetc(f2))!=EOF){
+        if(c1!=c2){ printf("Mismatch at %d\n",pos); ok=0; break; }
+        pos++;
+    }
+    if(ok) printf("Files Match");
+    return 0;
+}

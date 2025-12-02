@@ -1,0 +1,9 @@
+#include <stdio.h>
+struct st{ char name[20]; int age; };
+int main(){
+    struct st s={"Arif",20}, t;
+    FILE *f=fopen("x.bin","wb"); fwrite(&s,sizeof(s),1,f); fclose(f);
+    f=fopen("x.bin","rb"); fread(&t,sizeof(t),1,f);
+    printf("%s %d",t.name,t.age); fclose(f);
+    return 0;
+}

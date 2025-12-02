@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char s[100]; gets(s);
+    char *p=s, *q=s+strlen(s)-1;
+    int ok=1;
+    while(p<q) if(*p++ != *q--) ok=0;
+    printf(ok?"Palindrome":"Not Palindrome");
+    return 0;
+}

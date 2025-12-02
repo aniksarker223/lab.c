@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main(){
+    rename("a.txt","b.txt");
+    return 0;
+}

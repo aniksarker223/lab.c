@@ -1,0 +1,8 @@
+#include <stdio.h>
+struct student{ char name[50]; int age; };
+int main(){
+    struct student s;
+    scanf("%s%d", s.name, &s.age);
+    printf("%s %d", s.name, s.age);
+    return 0;
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <string.h>
+int main(){
+    char pat[50], line[200];
+    gets(pat);
+    FILE *f=fopen("a.txt","r");
+    while(fgets(line,200,f))
+        if(strstr(line,pat)) printf("%s", line);
+    return 0;
+}

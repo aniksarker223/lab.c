@@ -1,0 +1,10 @@
+#include <stdio.h>
+struct dist{ int ft, in; };
+int main(){
+    struct dist a,b,c;
+    scanf("%d%d%d%d",&a.ft,&a.in,&b.ft,&b.in);
+    c.ft=a.ft+b.ft; c.in=a.in+b.in;
+    c.ft+=c.in/12; c.in%=12;
+    printf("%d ft %d in", c.ft, c.in);
+    return 0;
+}

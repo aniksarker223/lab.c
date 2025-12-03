@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main(){
+    chmod("a.txt",0444);
+    return 0;
+}

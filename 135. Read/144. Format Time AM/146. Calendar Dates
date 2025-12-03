@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main(){
+    for(int d=1; d<=31; d++) printf("2025-%02d-%02d\n",01,d);
+    return 0;
+}

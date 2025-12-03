@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main(){
+    printf("C cannot directly read zip without libraries.\n");
+    return 0;
+}

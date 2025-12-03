@@ -1,0 +1,5 @@
+#include <stdio.h>
+int main(){
+    printf("Requires graphics.h (Turbo C).");
+    return 0;
+}

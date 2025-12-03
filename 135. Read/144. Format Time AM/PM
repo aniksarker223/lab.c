@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main(){
+    int h,m; scanf("%d%d",&h,&m);
+    printf("%02d:%02d %s", h%12, m, h>=12?"PM":"AM");
+    return 0;
+}
